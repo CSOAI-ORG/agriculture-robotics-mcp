@@ -1,9 +1,99 @@
 {
   "name": "agriculture-robotics-mcp",
-  "description": "Agriculture Robotics MCP Server by MEOK AI Labs",
+  "description": "By **MEOK AI Labs** | https://meok.ai",
   "version": "1.0.0",
-  "author": "MEOK AI Labs",
-  "license": "MIT",
-  "repository": "https://github.com/CSOAI-ORG/agriculture-robotics-mcp",
-  "install": "pip install mcp && python server.py"
+  "tools": [
+    {
+      "name": "robot_safety_check",
+      "description": "",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "robot_type": {
+            "type": "string"
+          },
+          "max_speed_ms": {
+            "type": "number"
+          },
+          "has_emergency_stop": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "robot_type",
+          "max_speed_ms",
+          "has_emergency_stop"
+        ]
+      }
+    },
+    {
+      "name": "spray_plan_calculator",
+      "description": "",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "field_ha": {
+            "type": "number"
+          },
+          "chemical_l_per_ha": {
+            "type": "number"
+          },
+          "buffer_m": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "field_ha",
+          "chemical_l_per_ha",
+          "buffer_m"
+        ]
+      }
+    },
+    {
+      "name": "harvest_optimization",
+      "description": "",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "crop_type": {
+            "type": "string"
+          },
+          "moisture_percent": {
+            "type": "number"
+          },
+          "weather_forecast": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "crop_type",
+          "moisture_percent",
+          "weather_forecast"
+        ]
+      }
+    },
+    {
+      "name": "drone_flight_plan",
+      "description": "",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "field_bounds": {
+            "type": "array"
+          },
+          "max_altitude_m": {
+            "type": "number"
+          },
+          "has_geo_fence": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "field_bounds",
+          "max_altitude_m",
+          "has_geo_fence"
+        ]
+      }
+    }
+  ]
 }

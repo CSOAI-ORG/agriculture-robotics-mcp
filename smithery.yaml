@@ -1,9 +1,52 @@
-author: MEOK AI Labs
-description: Agriculture Robotics MCP Server
-license: MIT
 name: agriculture-robotics-mcp
-repository: https://github.com/CSOAI-ORG/agriculture-robotics-mcp
-tools:
-- description: See server.py
-  name: tool
+description: By **MEOK AI Labs** | https://meok.ai
 version: 1.0.0
+tools:
+- name: robot_safety_check
+  description: ''
+  parameters:
+  - name: robot_type
+    type: string
+    required: true
+  - name: max_speed_ms
+    type: number
+    required: true
+  - name: has_emergency_stop
+    type: boolean
+    required: true
+- name: spray_plan_calculator
+  description: ''
+  parameters:
+  - name: field_ha
+    type: number
+    required: true
+  - name: chemical_l_per_ha
+    type: number
+    required: true
+  - name: buffer_m
+    type: number
+    required: true
+- name: harvest_optimization
+  description: ''
+  parameters:
+  - name: crop_type
+    type: string
+    required: true
+  - name: moisture_percent
+    type: number
+    required: true
+  - name: weather_forecast
+    type: string
+    required: true
+- name: drone_flight_plan
+  description: ''
+  parameters:
+  - name: field_bounds
+    type: array
+    required: true
+  - name: max_altitude_m
+    type: number
+    required: true
+  - name: has_geo_fence
+    type: boolean
+    required: true
