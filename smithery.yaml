@@ -1,0 +1,9 @@
+author: MEOK AI Labs
+description: Agriculture Robotics MCP Server
+license: MIT
+name: agriculture-robotics-mcp
+repository: https://github.com/CSOAI-ORG/agriculture-robotics-mcp
+tools:
+- description: See server.py
+  name: tool
+version: 1.0.0

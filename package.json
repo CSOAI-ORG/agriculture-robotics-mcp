@@ -1,0 +1,19 @@
+{
+  "name": "agriculture-robotics-mcp",
+  "version": "1.0.0",
+  "description": "Agriculture Robotics MCP Server by MEOK AI Labs",
+  "main": "server.py",
+  "scripts": {
+    "start": "python server.py"
+  },
+  "keywords": [
+    "mcp",
+    "ai",
+    "meok"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/agriculture-robotics-mcp"
+  }
+}
