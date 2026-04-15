@@ -1,0 +1,62 @@
+{
+  "name": "agriculture-robotics",
+  "description": "MEOK AI Labs \u2014 Agricultural Robotics Governance. ISO 18497 robot safety, EPA pesticide drift, FAA farm drone compliance.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/agriculture-robotics-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "robot_safety_check",
+      "description": "Run safety diagnostics on agricultural robot systems per ISO 18497 (Collaborative robots)."
+    },
+    {
+      "name": "spray_plan_calculator",
+      "description": "Calculate spray coverage with EPA drift mitigation and buffer zone compliance."
+    },
+    {
+      "name": "harvest_optimization",
+      "description": "Optimize harvest schedule with moisture, weather, and equipment readiness."
+    },
+    {
+      "name": "drone_flight_plan",
+      "description": "Generate agricultural drone flight plan with CAA compliance for Part 107/Part 107+."
+    },
+    {
+      "name": "soil_analysis",
+      "description": "Analyze soil nutrients and generate fertilizer recommendations."
+    },
+    {
+      "name": "irrigation_schedule",
+      "description": "Calculate irrigation schedule using FAO-56 evapotranspiration."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Agriculture & Food",
+    "IoT & Hardware"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
