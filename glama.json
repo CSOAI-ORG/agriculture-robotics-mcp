@@ -1,0 +1,10 @@
+{
+  "name": "agriculture-robotics-mcp",
+  "description": "MEOK AI Labs \u2014 agriculture-robotics-mcp",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/agriculture-robotics-mcp",
+  "license": "MIT",
+  "runtime": "python",
+  "entryPoint": "mcp-wrapper.py"
+}
