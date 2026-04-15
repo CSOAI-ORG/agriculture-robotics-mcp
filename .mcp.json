@@ -1,6 +1,6 @@
 {
   "name": "agriculture-robotics-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs MCP Server",
+  "description": "Agriculture Robotics tools for AI agents. Capabilities: robot safety check, spray plan calculator, harvest optimization. Built by MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {

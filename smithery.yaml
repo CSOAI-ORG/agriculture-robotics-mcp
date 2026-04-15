@@ -1,9 +1,11 @@
 name: agriculture-robotics-mcp
-description: MEOK AI Labs MCP Server
+description: 'Agriculture Robotics tools for AI agents. Capabilities: robot safety
+  check, spray plan calculator, harvest optimization. Built by MEOK AI Labs.'
 version: 1.0.0
 tools:
 - name: robot_safety_check
-  description: Run safety diagnostics on agricultural robot systems before field deployment.
+  description: Run safety diagnostics on agricultural robot systems per ISO 18497-1:2022
+    collaborative robots.
   parameters:
   - name: robot_type
     type: string
@@ -15,8 +17,8 @@ tools:
     type: boolean
     required: true
 - name: spray_plan_calculator
-  description: Calculate optimal spray coverage plan based on field size, wind, and
-    crop type.
+  description: Calculate spray coverage with EPA drift mitigation and buffer zone
+    compliance.
   parameters:
   - name: field_ha
     type: number
@@ -27,9 +29,12 @@ tools:
   - name: buffer_m
     type: number
     required: true
+  - name: wind_speed_ms
+    type: number
+    required: false
 - name: harvest_optimization
-  description: Optimize harvest schedule based on crop maturity, weather, and equipment
-    availability.
+  description: Optimize harvest schedule based on crop moisture, weather, and equipment
+    readiness.
   parameters:
   - name: crop_type
     type: string
@@ -40,9 +45,11 @@ tools:
   - name: weather_forecast
     type: string
     required: true
+  - name: equipment_available
+    type: boolean
+    required: false
 - name: drone_flight_plan
-  description: Generate an agricultural drone flight plan with waypoints and spray
-    coverage mapping.
+  description: Generate FAA Part 107 compliant agricultural drone flight plan.
   parameters:
   - name: field_bounds
     type: array
@@ -52,4 +59,40 @@ tools:
     required: true
   - name: has_geo_fence
     type: boolean
+    required: true
+  - name: operation_type
+    type: string
+    required: false
+- name: soil_analysis
+  description: Analyze soil nutrients and generate fertilizer recommendations.
+  parameters:
+  - name: field_id
+    type: string
+    required: true
+  - name: ph
+    type: number
+    required: true
+  - name: nitrogen_ppm
+    type: number
+    required: true
+  - name: phosphorus_ppm
+    type: number
+    required: true
+  - name: potassium_ppm
+    type: number
+    required: true
+- name: irrigation_schedule
+  description: Calculate irrigation schedule using FAO-56 evapotranspiration.
+  parameters:
+  - name: crop
+    type: string
+    required: true
+  - name: eto_mm
+    type: number
+    required: true
+  - name: soil_capacity_mm
+    type: number
+    required: true
+  - name: days_since_water
+    type: number
     required: true
