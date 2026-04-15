@@ -21,6 +21,7 @@ def _rl(c="anon"):
 
 @mcp.tool()
 def robot_safety_check(robot_type: str, max_speed_ms: float, has_emergency_stop: bool, api_key: str = "") -> str:
+    """Run safety diagnostics on agricultural robot systems before field deployment."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -35,6 +36,7 @@ def robot_safety_check(robot_type: str, max_speed_ms: float, has_emergency_stop:
 
 @mcp.tool()
 def spray_plan_calculator(field_ha: float, chemical_l_per_ha: float, buffer_m: float, api_key: str = "") -> str:
+    """Calculate optimal spray coverage plan based on field size, wind, and crop type."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -46,6 +48,7 @@ def spray_plan_calculator(field_ha: float, chemical_l_per_ha: float, buffer_m: f
 
 @mcp.tool()
 def harvest_optimization(crop_type: str, moisture_percent: float, weather_forecast: str, api_key: str = "") -> str:
+    """Optimize harvest schedule based on crop maturity, weather, and equipment availability."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -56,6 +59,7 @@ def harvest_optimization(crop_type: str, moisture_percent: float, weather_foreca
 
 @mcp.tool()
 def drone_flight_plan(field_bounds: list, max_altitude_m: float, has_geo_fence: bool, api_key: str = "") -> str:
+    """Generate an agricultural drone flight plan with waypoints and spray coverage mapping."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}

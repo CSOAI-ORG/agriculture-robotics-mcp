@@ -3,7 +3,7 @@ description: MEOK AI Labs MCP Server
 version: 1.0.0
 tools:
 - name: robot_safety_check
-  description: ''
+  description: Run safety diagnostics on agricultural robot systems before field deployment.
   parameters:
   - name: robot_type
     type: string
@@ -15,7 +15,8 @@ tools:
     type: boolean
     required: true
 - name: spray_plan_calculator
-  description: ''
+  description: Calculate optimal spray coverage plan based on field size, wind, and
+    crop type.
   parameters:
   - name: field_ha
     type: number
@@ -27,7 +28,8 @@ tools:
     type: number
     required: true
 - name: harvest_optimization
-  description: ''
+  description: Optimize harvest schedule based on crop maturity, weather, and equipment
+    availability.
   parameters:
   - name: crop_type
     type: string
@@ -39,7 +41,8 @@ tools:
     type: string
     required: true
 - name: drone_flight_plan
-  description: ''
+  description: Generate an agricultural drone flight plan with waypoints and spray
+    coverage mapping.
   parameters:
   - name: field_bounds
     type: array

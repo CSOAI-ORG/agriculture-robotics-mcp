@@ -5,7 +5,7 @@
   "tools": [
     {
       "name": "robot_safety_check",
-      "description": "",
+      "description": "Run safety diagnostics on agricultural robot systems before field deployment.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -28,7 +28,7 @@
     },
     {
       "name": "spray_plan_calculator",
-      "description": "",
+      "description": "Calculate optimal spray coverage plan based on field size, wind, and crop type.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -51,7 +51,7 @@
     },
     {
       "name": "harvest_optimization",
-      "description": "",
+      "description": "Optimize harvest schedule based on crop maturity, weather, and equipment availability.",
       "parameters": {
         "type": "object",
         "properties": {
@@ -74,7 +74,7 @@
     },
     {
       "name": "drone_flight_plan",
-      "description": "",
+      "description": "Generate an agricultural drone flight plan with waypoints and spray coverage mapping.",
       "parameters": {
         "type": "object",
         "properties": {
