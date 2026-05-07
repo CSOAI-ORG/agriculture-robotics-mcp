@@ -54,6 +54,13 @@ def robot_safety_check(
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        robot_type (str): The robot type to analyze or process.
+        max_speed_ms (float): The max speed ms to analyze or process.
+        has_emergency_stop (bool): The has emergency stop to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -120,6 +127,14 @@ def spray_plan_calculator(
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        field_ha (float): The field ha to analyze or process.
+        chemical_l_per_ha (float): The chemical l per ha to analyze or process.
+        buffer_m (float): The buffer m to analyze or process.
+        wind_speed_ms (float): The wind speed ms to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -190,6 +205,14 @@ def harvest_optimization(
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        crop_type (str): The crop type to analyze or process.
+        moisture_percent (float): The moisture percent to analyze or process.
+        weather_forecast (str): The weather forecast to analyze or process.
+        equipment_available (bool): The equipment available to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -263,6 +286,14 @@ def drone_flight_plan(
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        field_bounds (list): The field bounds to analyze or process.
+        max_altitude_m (float): The max altitude m to analyze or process.
+        has_geo_fence (bool): The has geo fence to analyze or process.
+        operation_type (str): The operation type to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -328,6 +359,15 @@ def soil_analysis(
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        field_id (str): The field id to analyze or process.
+        ph (float): The ph to analyze or process.
+        nitrogen_ppm (float): The nitrogen ppm to analyze or process.
+        phosphorus_ppm (float): The phosphorus ppm to analyze or process.
+        potassium_ppm (float): The potassium ppm to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -396,6 +436,14 @@ def irrigation_schedule(
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        crop (str): The crop to analyze or process.
+        eto_mm (float): The eto mm to analyze or process.
+        soil_capacity_mm (float): The soil capacity mm to analyze or process.
+        days_since_water (int): The days since water to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
