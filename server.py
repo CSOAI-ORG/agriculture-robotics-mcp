@@ -38,7 +38,23 @@ EPA_DRIFT_BUFFER = 5.0
 def robot_safety_check(
     robot_type: str, max_speed_ms: float, has_emergency_stop: bool, api_key: str = ""
 ) -> str:
-    """Run safety diagnostics on agricultural robot systems per ISO 18497 (Collaborative robots)."""
+    """Run safety diagnostics on agricultural robot systems per ISO 18497 (Collaborative robots).
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -74,7 +90,23 @@ def spray_plan_calculator(
     wind_speed_ms: float = 0.0,
     api_key: str = "",
 ) -> str:
-    """Calculate spray coverage with EPA drift mitigation and buffer zone compliance."""
+    """Calculate spray coverage with EPA drift mitigation and buffer zone compliance.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -114,7 +146,23 @@ def harvest_optimization(
     equipment_available: bool = True,
     api_key: str = "",
 ) -> str:
-    """Optimize harvest schedule with moisture, weather, and equipment readiness."""
+    """Optimize harvest schedule with moisture, weather, and equipment readiness.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -158,7 +206,22 @@ def drone_flight_plan(
     operation_type: str = "spraying",
     api_key: str = "",
 ) -> str:
-    """Generate agricultural drone flight plan with CAA compliance for Part 107/Part 107+."""
+    """Generate agricultural drone flight plan with CAA compliance for Part 107/Part 107+.
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -194,7 +257,22 @@ def soil_analysis(
     potassium_ppm: float,
     api_key: str = "",
 ) -> str:
-    """Analyze soil nutrients and generate fertilizer recommendations."""
+    """Analyze soil nutrients and generate fertilizer recommendations.
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
@@ -232,7 +310,23 @@ def irrigation_schedule(
     days_since_water: int,
     api_key: str = "",
 ) -> str:
-    """Calculate irrigation schedule using FAO-56 evapotranspiration."""
+    """Calculate irrigation schedule using FAO-56 evapotranspiration.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
