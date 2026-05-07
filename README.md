@@ -1,3 +1,5 @@
+[![agriculture-robotics-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/agriculture-robotics-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/agriculture-robotics-mcp)
+
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/agriculture-robotics-mcp)](https://github.com/CSOAI-ORG/agriculture-robotics-mcp/stargazers)
