@@ -1,0 +1,31 @@
+{
+  "name": "agriculture-robotics-mcp",
+  "title": "Agriculture Robotics Mcp",
+  "description": "Agriculture Robotics tools for AI agents. Capabilities: robot safety check, spray plan calculator, harvest optimization. Built by MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "robot_safety_check"
+    },
+    {
+      "name": "spray_plan_calculator"
+    },
+    {
+      "name": "harvest_optimization"
+    },
+    {
+      "name": "drone_flight_plan"
+    },
+    {
+      "name": "soil_analysis"
+    },
+    {
+      "name": "irrigation_schedule"
+    }
+  ]
+}

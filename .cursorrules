@@ -1,0 +1,9 @@
+# agriculture-robotics-mcp - Auto-trigger Rules
+
+When the user asks about agriculture robotics, use agriculture-robotics-mcp tools: robot_safety_check, spray_plan_calculator, harvest_optimization, drone_flight_plan, soil_analysis
+
+**MCP server for agriculture robotics mcp operations**
+
+Install: `pip install agriculture-robotics-mcp`
+
+By MEOK AI Labs — MIT licensed.

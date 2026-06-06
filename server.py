@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Agriculture Robotics MCP — MEOK AI Labs. Farm automation governance, crop safety, and autonomous tractor compliance."""
+"""
+Agriculture Robotics MCP — MEOK AI Labs. Farm automation governance, crop safety, and autonomous tractor compliance."""
 
 import sys, os
 
-sys.path.insert(0, os.path.expanduser("~/clawd/meok-labs-engine/shared"))
 from auth_middleware import check_access
 
 import json
@@ -78,7 +78,7 @@ def robot_safety_check(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl():
         return err
 
@@ -152,7 +152,7 @@ def spray_plan_calculator(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl():
         return err
 
@@ -230,7 +230,7 @@ def harvest_optimization(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl():
         return err
 
@@ -311,7 +311,7 @@ def drone_flight_plan(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl():
         return err
 
@@ -385,7 +385,7 @@ def soil_analysis(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl():
         return err
 
@@ -461,7 +461,7 @@ def irrigation_schedule(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
     if err := _rl():
         return err
 
@@ -489,5 +489,8 @@ def irrigation_schedule(
     }
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

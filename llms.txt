@@ -1,0 +1,39 @@
+# agriculture-robotics-mcp
+# **MCP server for agriculture robotics mcp operations**
+
+## Install
+```bash
+pip install agriculture-robotics-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `robot_safety_check`
+Run safety diagnostics on agricultural robot systems per ISO 18497 (Collaborative robots).
+
+### `spray_plan_calculator`
+Calculate spray coverage with EPA drift mitigation and buffer zone compliance.
+
+### `harvest_optimization`
+Optimize harvest schedule with moisture, weather, and equipment readiness.
+
+### `drone_flight_plan`
+Generate agricultural drone flight plan with CAA compliance for Part 107/Part 107+.
+
+### `soil_analysis`
+Analyze soil nutrients and generate fertilizer recommendations.
+
+### `irrigation_schedule`
+Calculate irrigation schedule using FAO-56 evapotranspiration.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.
