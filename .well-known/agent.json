@@ -1,0 +1,77 @@
+{
+  "name": "agriculture-robotics-mcp",
+  "description": "Agriculture Robotics MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/agriculture-robotics-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "robot_safety_check",
+      "name": "Robot Safety Check",
+      "description": "robot_safety_check via agriculture-robotics-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "spray_plan_calculator",
+      "name": "Spray Plan Calculator",
+      "description": "spray_plan_calculator via agriculture-robotics-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "harvest_optimization",
+      "name": "Harvest Optimization",
+      "description": "harvest_optimization via agriculture-robotics-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "drone_flight_plan",
+      "name": "Drone Flight Plan",
+      "description": "drone_flight_plan via agriculture-robotics-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "soil_analysis",
+      "name": "Soil Analysis",
+      "description": "soil_analysis via agriculture-robotics-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "irrigation_schedule",
+      "name": "Irrigation Schedule",
+      "description": "irrigation_schedule via agriculture-robotics-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

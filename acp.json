@@ -1,0 +1,24 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "agriculture-robotics-mcp",
+    "description": "Agriculture Robotics MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "agriculture-robotics-mcp"
+      }
+    ],
+    "capabilities": [
+      "robot_safety_check",
+      "spray_plan_calculator",
+      "harvest_optimization",
+      "drone_flight_plan",
+      "soil_analysis",
+      "irrigation_schedule"
+    ]
+  }
+}
