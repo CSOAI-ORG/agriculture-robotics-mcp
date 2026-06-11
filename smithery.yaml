@@ -96,3 +96,16 @@ tools:
   - name: days_since_water
     type: number
     required: true
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+    - apiKey
+    properties:
+      apiKey:
+        type: string
+        description: Your MEOK API Key
+  commandFunction: "(config) => ({\n  command: 'uvx',\n  args: ['agriculture-robotics-mcp',\
+    \ '--api-key', config.apiKey],\n  env: {\n    MEOK_API_KEY: config.apiKey\n  }\n\
+    })"
