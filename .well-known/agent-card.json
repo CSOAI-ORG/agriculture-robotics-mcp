@@ -1,0 +1,128 @@
+{
+  "name": "Agriculture Robotics Mcp",
+  "version": "1.0.6",
+  "url": "https://mcp.meok.ai/agriculture-robotics-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "Agriculture Robotics tools for AI agents. Capabilities: robot safety check, spray plan calculator, harvest optimization. Built by MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "robot_safety_check",
+      "name": "Robot Safety Check",
+      "description": "Robot Safety Check — a tool of the agriculture-robotics-mcp MCP.",
+      "tags": [
+        "robotics"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "spray_plan_calculator",
+      "name": "Spray Plan Calculator",
+      "description": "Spray Plan Calculator — a tool of the agriculture-robotics-mcp MCP.",
+      "tags": [
+        "robotics"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "harvest_optimization",
+      "name": "Harvest Optimization",
+      "description": "Harvest Optimization — a tool of the agriculture-robotics-mcp MCP.",
+      "tags": [
+        "robotics"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "drone_flight_plan",
+      "name": "Drone Flight Plan",
+      "description": "Drone Flight Plan — a tool of the agriculture-robotics-mcp MCP.",
+      "tags": [
+        "robotics"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "soil_analysis",
+      "name": "Soil Analysis",
+      "description": "Soil Analysis — a tool of the agriculture-robotics-mcp MCP.",
+      "tags": [
+        "robotics"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "irrigation_schedule",
+      "name": "Irrigation Schedule",
+      "description": "Irrigation Schedule — a tool of the agriculture-robotics-mcp MCP.",
+      "tags": [
+        "robotics"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "agriculture-robotics-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
